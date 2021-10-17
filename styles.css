@@ -22,6 +22,10 @@
 	box-sizing: border-box;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	cursor: default;
 	font-family: "Lato", sans-serif;
@@ -60,7 +64,7 @@ a {
 }
 
 .section {
-	margin: 100px 10%;
+	padding: 50px 10%;
 }
 
 .section-title {
@@ -84,6 +88,13 @@ a {
 	align-content: center;
 	color: #18191a;
 	font-weight: bold;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	transition: 0.5s ease-in-out;
+}
+
+.btn-contactMe:hover {
+	color: var(--textColor)!important;
+	transition: 0.5s ease-in-out;
 }
 
 .align-center {
@@ -840,6 +851,35 @@ video {
 	display: none;
 }
 
+/* ABOUT ME */
+
+#profile {
+	flex-direction: row;
+}
+
+.about-me h1 {
+	font-family: "Oswald", sans-serif;
+	font-size: 2.3em;
+}
+
+.about-me h2 {
+	font-size: 1.5em;
+	margin-bottom: 5px;
+}
+
+.about-me p {
+	font-size: 1.2em;
+	margin-bottom: 5px;
+}
+
+#profile img {
+	width: 65%;
+}
+
+.image-about-me {
+	text-align: center;
+}
+
 /* EXPERIENCE */
 
 .container::after,
@@ -856,8 +896,14 @@ video {
 	padding: 0 8px;
 }
 
+.card {
+    padding: 5%;
+    height: 300px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
 .card img {
-	width: 40%;
+	height: 40%;
 }
 
 .btn-link {
@@ -866,8 +912,14 @@ video {
 	background: var(--tertiaryColor);
 	padding: 13px 30px 13px 30px;
 	align-content: center;
-	color: #18191a;
+	color: var(--backgroundColor);
 	font-weight: bold;
+	transition: 0.5s ease-in-out;
+}
+
+.btn-link:hover {
+	background: var(--primaryColor);
+	transition: 0.5s ease-in-out;
 }
 
 /* SKILLS */
@@ -875,7 +927,7 @@ video {
 .bar-container {
 	margin: 20px;
 	width: 75%;
-	background-color: #ddd;
+	background-color: var(--secondBGColor);
 	border-radius: 30px;
 }
 
@@ -885,26 +937,12 @@ video {
 	padding-top: 7px;
 	padding-bottom: 7px;
 	padding-right: 10px;
-	color: white;
+	color: var(--backgroundColor);
 	border-radius: 30px;
 }
 
-/* ABOUT ME */
-
-#profile {
-	flex-direction: row;
-}
-
-.about-me h1 {
-	font-family: "Oswald", sans-serif;
-}
-
-#profile img {
-	width: 65%;
-}
-
-.image-about-me {
-	text-align: center;
+.skill-list {
+	min-height: 130px;
 }
 
 /* CONTACT */
@@ -941,6 +979,7 @@ li a i.fab {
 
 li a i.fab:hover {
 	color: #00deeb;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 	transition: 0.5s ease-in-out;
 }
 
@@ -953,5 +992,19 @@ li a i.fab:hover {
 
 .whatsapp:hover {
 	color: #0cf67e;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 	transition: 0.5s ease-in-out;
+}
+
+.email {
+	text-align: center;
+	align-items: center;
+	font-size: 1.9em;
+}
+
+/* FOOTER */
+
+.footer {
+    height: 30px;
+    text-align:center;
 }

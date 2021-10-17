@@ -213,16 +213,22 @@
 // SKILLS LOGIC
 let sSkillsData =
 	'{"skills": [{"Nombre":"Angular","Imagen":"https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/1200px-Angular_full_color_logo.svg.png","Nivel":80},' +
-    '{"Nombre":"SQL Server","Imagen":"https://live.mrf.io/statics/i/ps/www.muylinux.com/wp-content/uploads/2018/02/microsoft_sqlserver.png?width=1200&enable=upscale","Nivel":90},' +
-    '{"Nombre":"C#","Imagen":"https://aspnetcoremaster.com/img/csharp.webp","Nivel":80},' +
-    '{"Nombre":"SCRUM","Imagen":"https://hondurasdigitalchallenge.com/wp-content/uploads/2020/05/section-1-image.png","Nivel":95},' +
-    '{"Nombre":"Jira","Imagen":"https://pac.nativapagos.com/images/atlassian-jira-logo-large.png","Nivel":70}]}';
+	'{"Nombre":"SQL Server","Imagen":"https://live.mrf.io/statics/i/ps/www.muylinux.com/wp-content/uploads/2018/02/microsoft_sqlserver.png?width=1200&enable=upscale","Nivel":90},' +
+	'{"Nombre":"C#","Imagen":"https://aspnetcoremaster.com/img/csharp.webp","Nivel":80},' +
+	'{"Nombre":"SCRUM","Imagen":"https://hondurasdigitalchallenge.com/wp-content/uploads/2020/05/section-1-image.png","Nivel":95},' +
+	'{"Nombre":"Jira","Imagen":"https://pac.nativapagos.com/images/atlassian-jira-logo-large.png","Nivel":70}]}';
 const jSkillsData = JSON.parse(sSkillsData).skills;
 
 let skillsContainer = document.getElementById("skillsList");
 for (var i = 0; i < jSkillsData.length; i++) {
 	skillsContainer.innerHTML +=
-		'<div class="row skill-list"><img src="' + jSkillsData[i].Imagen + '" width="150px"><div class="bar-container"><div class="bar" style="width:' + jSkillsData[i].Nivel + '%">' + jSkillsData[i].Nivel + '%</div></div></div><br>';
+		'<div class="row skill-list"><img src="' +
+		jSkillsData[i].Imagen +
+		'" width="150px"><div class="bar-container"><div class="bar" style="width:' +
+		jSkillsData[i].Nivel +
+		'%">' +
+		jSkillsData[i].Nivel +
+		"%</div></div></div><br>";
 }
 
 // CONTACT LOGIC
@@ -269,10 +275,12 @@ function isValid() {
 }
 
 function sendContact() {
-    if (isValid()) {
-        alert('Su solicitud ha sido enviada')
-    }
-    else {
-        alert('Hubo un error')
-    }
+	if (isValid()) {
+        console.log(fields.name.value);
+        console.log(fields.email.value);
+        console.log(fields.message.value);
+		alert("Su solicitud ha sido enviada");
+	} else {
+		alert("Hubo un error");
+	}
 }
