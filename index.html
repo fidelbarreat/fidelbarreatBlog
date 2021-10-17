@@ -5,6 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="styles.css" />
+        <script src="https://kit.fontawesome.com/0b963f3679.js" crossorigin="anonymous"></script>
 		<title>Fidel Barreat</title>
 	</head>
 	<body>
@@ -18,7 +19,7 @@
 					<li><a href="#profile">Perfil</a></li>
 					<li><a href="#experience">Experiencia</a></li>
 					<li><a href="#skills">Habilidades</a></li>
-					<li class="btn-contactMe"><a href="#contactMe">Contacto</a></li>
+					<a href="#contact-me"><li class="btn-contactMe">Contacto</li></a>
 				</ul>
 			</nav>
 		</section>
@@ -133,8 +134,31 @@
             </div>
         </section>
 		<!-- CONTACT ME -->
-		<section id="contactMe">
+		<section id="contact-me" class="section">
             <div class="section-title"><h2>Contacto</h2></div>
+            <div class="row">
+                <div class="column">
+                    <ul class="social-media">
+                        <li><a href="https://www.facebook.com/fidel.barreatlemoine/" target="_blank"><i class="fab fa-facebook-square fa-4x"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/fidelbarreat/" target="_blank"><i class="fab fa-linkedin fa-4x"></i></a></li>
+                        <li><a href="https://www.instagram.com/sr.fidelidad/" target="_blank"><i class="fab fa-instagram-square fa-4x"></i></a></li>
+                    </ul>
+                    <p class="whatsapp"><a href="https://api.whatsapp.com/send/?phone=584241777081" target="_blank"><i class="fab fa-whatsapp fa-2x"></i> +58 424 177 70 81</a></p>
+                </div>
+                <div class="content-contact column">
+                    <form onsubmit="return false" action="">
+                        <label for="name">Nombre: </label><input type="text" name="name" placeholder="Ej: Pedro Perez" id="contact-name">
+                        <br>
+                        <label for="email">Email: </label><input type="email" name="email" placeholder="Ej: pedro.perez@gmail.com" id="contact-email">
+                        <br>
+                        <label for="Mensaje">Mensaje: </label><input type="textarea" name="message" placeholder="Ej: Hola! Me gusta tu perfil, me encantaría comunicarme contigo" id="contact-message">
+                        <br>
+                        <div width="100%" class="btn-div">
+                            <button type="submit" class="btn-contactMe" onclick="sendContact();">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </section>
 		<script
 			src="https://code.jquery.com/jquery-2.2.0.min.js"

@@ -90,6 +90,13 @@ a {
     text-align: center;
 }
 
+input {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border:none;
+}
+
 /* HEADER */
 
 .header {
@@ -124,6 +131,7 @@ a {
 	justify-content: space-between;
 	padding: 0 30px;
 	background: var(--secondBGColor);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .header .menu .navbar li {
@@ -133,8 +141,13 @@ a {
 	font-size: 1.2em;
 	margin-left: auto;
 	cursor: pointer;
-	/* background: red; */
-	transition: all 200ms ease-in-out;
+    text-align: center;
+    transition: 0.5s ease-in-out;
+}
+
+.header .menu .navbar li:hover {
+	color: var(--secondaryColor);
+    transition: 0.5s ease-in-out;
 }
 
 /* HERO CAROUSEL */
@@ -868,9 +881,58 @@ video {
 }
 
 #profile img {
-	width: 45%;
+	width: 65%;
 }
 
 .image-about-me {
     text-align: center;
+}
+
+/* CONTACT */
+
+#contact-name {
+    width: 46%;
+}
+
+#contact-email {
+    width: 50%;
+}
+
+#contact-message {
+    width: 100%;
+}
+
+.btn-div {
+    text-align: end;
+}
+
+.social-media {
+    display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+.social-media li {
+    padding: 20px;
+}
+
+li a i.fab {
+    transition: 0.5s ease-in-out;
+}
+
+li a i.fab:hover {
+    color: #00deeb;
+    transition: 0.5s ease-in-out;
+}
+
+.whatsapp {
+    text-align: center;
+    align-items: center;
+    font-size: 2em;
+    transition: 0.5s ease-in-out;
+}
+
+.whatsapp:hover {
+    color: #0cf67e;
+    transition: 0.5s ease-in-out;
 }
