@@ -1,11 +1,169 @@
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fidel Barreat</title>
-</head>
-<body>
-    
-</body>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="styles.css" />
+        <script src="https://kit.fontawesome.com/0b963f3679.js" crossorigin="anonymous"></script>
+		<title>Fidel Barreat</title>
+	</head>
+	<body>
+		<!-- HEADER SECTION -->
+		<section class="header" id="header">
+			<!-- Menu -->
+			<nav class="menu">
+				<p class="logo">Fidel Barreat</p>
+				<ul class="navbar">
+					<li><a href="#header">Inicio</a></li>
+					<li><a href="#profile">Perfil</a></li>
+					<li><a href="#experience">Experiencia</a></li>
+					<li><a href="#skills">Habilidades</a></li>
+					<a href="#contact-me"><li class="btn-contactMe">Contacto</li></a>
+				</ul>
+			</nav>
+		</section>
+		<!-- HERO CAROUSEL -->
+		<section class="cd-hero js-cd-hero js-cd-autoplay" id="home">
+			<ul class="cd-hero__slider">
+				<li class="cd-hero__slide cd-hero__slide--selected js-cd-slide slide1">
+					<div class="cd-hero__content cd-hero__content--full-width">
+						<h1>Bienvenido</h1>
+					</div>
+				</li>
+
+				<li class="cd-hero__slide js-cd-slide slide2">
+					<!-- <div class="cd-hero__content cd-hero__content--full-width">
+						<h1>Bienvenido</h1>
+					</div> -->
+				</li>
+
+				<li class="cd-hero__slide js-cd-slide slide3">
+					<!-- <div class="cd-hero__content cd-hero__content--full-width">
+						<h1>Bienvenido</h1>
+					</div> -->
+				</li>
+
+				
+			<!-- .cd-hero__slider -->
+
+			<div class="cd-hero__nav js-cd-nav">
+				<nav>
+					<span
+						class="cd-hero__marker cd-hero__marker--item-1 js-cd-marker"
+					></span>
+
+					<ul>
+						<li class="cd-selected"><a href="#0">Bogotá</a></li>
+						<li><a href="#0">Caracas</a></li>
+						<li><a href="#0">nHubex</a></li>
+					</ul>
+				</nav>
+			</div>
+			<!-- .cd-hero__nav -->
+		</section>
+		<!-- .cd-hero -->
+
+		<!-- PROFILE -->
+		<section id="profile" class="section section-cols-2">
+            <div class="section-title"><h2>Perfil</h2></div>
+            <div class="row">
+                <div class="about-me column">
+                    <h1>Fidel Eduardo Barreat Lemoine</h1>
+                    <p>Soy un estudiante de Ingeniería de Sistemas de la Universidad Metropolitana de Caracas, con más de 3 años de experiencia trabajando principalmente con Angular, SQL Server y C# y, otras en menor medida como React, Ruby y MySQL bajo metodologías ágiles como SCRUM.
+                        
+                    </p>
+                    <p>Estoy actualmente realizando un curso de certificación para convertirme en Azure Developer.</p>
+                    <p>Espero en un futuro estar especializado en Machine Learning, Deep Learning y AI.</p>
+                    <p>Mi motivación es escapar de latinoamerica.</p>
+                </div>
+                <div class="column image-about-me">
+                    <img src="https://i.imgur.com/mTgZGM6.png"/>
+                </div>
+            </div>
+        </section>
+		<!-- EXPERIENCE -->
+		<section id="experience" class="section">
+            <div class="section-title"><h2>Experiencia</h2></div>
+            <div class="row">
+                <div class="column align-center">
+                  <div class="card">
+                    <img src="https://macuna.tecfinanzas.com/Imagenes/NIETO/Logo.png" alt="Tiendasalfi">
+                    <div class="container">
+                      <h2>Tiendasalfi</h2>
+                      <p>Angular, C#, Microsoft SQL Server</p>
+                      <p>Febrero 2021</p>
+                      <br>
+                      <p><a href="https://www.tiendasalfi.com/" target="_blank" class="btn-link">Link</a></p>
+                    </div>
+                  </div>
+                </div>
+              
+                <div class="column align-center">
+                  <div class="card">
+                    <img src="https://www.nhubex.com/assets/layout/images/landing/section1_bg.jpg" alt="nHubex">
+                    <div class="container">
+                      <h2>nHubex</h2>
+                      <p>Angular, C#, Microsoft SQL Server</p>
+                      <p>Mayo 2019</p>
+                      <br>
+                      <p><a href="https://www.nhubex.com/assets/pages/landing.html" target="_blank" class="btn-link">Link</a></p>
+                    </div>
+                  </div>
+                </div>
+              
+                <div class="column align-center">
+                  <div class="card">
+                    <img src="https://nutra-ceutical.com/wp-content/uploads/2021/06/cropped-Logo-nutra-principal-e1624833696739.png" alt="NutraCeutical">
+                    <div class="container">
+                      <h2>Nutraceutical</h2>
+                      <p>Wordpress, PHP, HTML, CSS</p>
+                      <p>Julio 2021</p>
+                      <br>
+                      <p><a href="https://nutra-ceutical.com/" target="_blank" class="btn-link">Link</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </section>
+		<!-- SKILLS -->
+		<section id="skills" class="section">
+            <div class="section-title"><h2>Habilidades</h2></div>
+            <div id="skillsList">
+
+            </div>
+        </section>
+		<!-- CONTACT ME -->
+		<section id="contact-me" class="section">
+            <div class="section-title"><h2>Contacto</h2></div>
+            <div class="row">
+                <div class="column">
+                    <ul class="social-media">
+                        <li><a href="https://www.facebook.com/fidel.barreatlemoine/" target="_blank"><i class="fab fa-facebook-square fa-4x"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/fidelbarreat/" target="_blank"><i class="fab fa-linkedin fa-4x"></i></a></li>
+                        <li><a href="https://www.instagram.com/sr.fidelidad/" target="_blank"><i class="fab fa-instagram-square fa-4x"></i></a></li>
+                    </ul>
+                    <p class="whatsapp"><a href="https://api.whatsapp.com/send/?phone=584241777081" target="_blank"><i class="fab fa-whatsapp fa-2x"></i> +58 424 177 70 81</a></p>
+                </div>
+                <div class="content-contact column">
+                    <form onsubmit="return false" action="">
+                        <label for="name">Nombre: </label><input type="text" name="name" placeholder="Ej: Pedro Perez" id="contact-name">
+                        <br>
+                        <label for="email">Email: </label><input type="email" name="email" placeholder="Ej: pedro.perez@gmail.com" id="contact-email">
+                        <br>
+                        <label for="Mensaje">Mensaje: </label><input type="textarea" name="message" placeholder="Ej: Hola! Me gusta tu perfil, me encantaría comunicarme contigo" id="contact-message">
+                        <br>
+                        <div width="100%" class="btn-div">
+                            <button type="submit" class="btn-contactMe" onclick="sendContact();">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+		<script
+			src="https://code.jquery.com/jquery-2.2.0.min.js"
+			type="text/javascript"
+		></script>
+		<script type="text/javascript" src="main.js"></script>
+	</body>
 </html>
