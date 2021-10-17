@@ -1,3 +1,4 @@
+// HERO LOGIC
 (function(){
 	//remove no-js class
     removeClass(document.getElementsByTagName("html")[0], "no-js"); 
@@ -140,14 +141,6 @@
 		}
 	}
 
-	//on mobile - open/close primary navigation clicking/tapping the menu icon 
-	document.getElementsByClassName('js-cd-header__nav')[0].addEventListener('click', function(event){
-		if(event.target.tagName.toLowerCase() == 'nav') {
-			var dropdown = this.getElementsByTagName('ul')[0];
-			toggleClass(dropdown, 'cd-is-visible', !hasClass(dropdown, 'cd-is-visible'));
-		}
-	});
-
 	function removeClassPrefix(el, prefix) {
 		//remove all classes starting with 'prefix'
         var classes = el.className.split(" ").filter(function(c) {
@@ -181,3 +174,13 @@
 		else removeClass(el, className);
 	}
 })();
+
+// SKILLS LOGIC
+let sSkillsData = '{"skills": [{"Nombre":"Angular","Nivel":70},{"Nombre":"SQL Server","Nivel":90},{"Nombre":"C#","Nivel":80},{"Nombre":"SCRUM","Nivel":95},{"Nombre":"Jira","Nivel":70}]}'
+const jSkillsData = JSON.parse(sSkillsData).skills;
+console.debug(jSkillsData);//borrar
+
+let skillsContainer = document.getElementById("skillsList");
+for (var i = 0; i < jSkillsData.length; i++) {
+    skillsContainer.innerHTML += jSkillsData[i].Nombre + " = " + jSkillsData[i].Nivel + "<br>";
+  }
