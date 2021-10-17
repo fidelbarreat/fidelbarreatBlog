@@ -178,7 +178,6 @@
 // SKILLS LOGIC
 let sSkillsData = '{"skills": [{"Nombre":"Angular","Nivel":70},{"Nombre":"SQL Server","Nivel":90},{"Nombre":"C#","Nivel":80},{"Nombre":"SCRUM","Nivel":95},{"Nombre":"Jira","Nivel":70}]}'
 const jSkillsData = JSON.parse(sSkillsData).skills;
-console.debug(jSkillsData);//borrar
 
 let skillsContainer = document.getElementById("skillsList");
 for (var i = 0; i < jSkillsData.length; i++) {
