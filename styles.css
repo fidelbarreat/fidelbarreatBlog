@@ -47,6 +47,11 @@ a {
 	cursor: pointer;
 }
 
+.row {
+    display:flex;
+    align-items:center;
+}
+
 .wrapper {
 	min-width: calc(100vw - 30px);
 	max-width: calc(100vw - 30px);
@@ -55,23 +60,20 @@ a {
 }
 
 .section {
-	margin: 100px 20px;
+	margin: 100px 10%;
+}
+
+.section-title {
+    text-align: center;
+	font-family: "Oswald", sans-serif;
+    font-size: 2em;
+    margin: 50px 0;
+    color: var(--primaryColor);
+    text-shadow: 4px 4px 5px var(--secondBGColor);
 }
 
 .section .section-content {
 	margin-top: 60px;
-}
-
-.section-cols-2 {
-	display: grid;
-	grid-template-columns: repeat(1, 1fr);
-	gap: 40px;
-}
-
-.section-cols-3 {
-	display: grid;
-	grid-template-columns: repeat(1, 1fr);
-	gap: 40px;
 }
 
 .btn-contactMe {
@@ -82,6 +84,10 @@ a {
 	align-content: center;
 	color: #18191a;
 	font-weight: bold;
+}
+
+.align-center {
+    text-align: center;
 }
 
 /* HEADER */
@@ -361,6 +367,7 @@ video {
 
 .cd-hero__content h1 {
 	font-size: 4em;
+    text-shadow: 4px 4px 5px var(--secondBGColor);
 }
 
 .cd-hero__content.cd-hero__content--img {
@@ -820,6 +827,36 @@ video {
 	display: none;
 }
 
+/* EXPERIENCE */
+
+.container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+
+.column {
+    float: left;
+    width: 50%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+
+  .card img {
+      width: 40%;
+  }
+
+  .btn-link {
+	border-radius: 50px;
+	cursor: pointer;
+	background: var(--tertiaryColor);
+	padding: 13px 30px 13px 30px;
+	align-content: center;
+	color: #18191a;
+	font-weight: bold;
+  }
+
 /* ABOUT ME */
 
 #profile {
@@ -831,5 +868,9 @@ video {
 }
 
 #profile img {
-	width: 25%;
+	width: 45%;
+}
+
+.image-about-me {
+    text-align: center;
 }
