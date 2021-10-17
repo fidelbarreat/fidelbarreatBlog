@@ -55,26 +55,24 @@ a {
 }
 
 .section {
-	padding: 100px 0;
-	background: var(--light);
-}
-
-.section .section-title {
-	display: flex;
-	justify-content: space-between;
-}
-.section .section-title p {
-	text-transform: uppercase;
-	font-weight: bolder;
-	font-size: 1.563em;
-}
-.section .section-title a {
-	display: none;
+	margin: 100px 20px;
 }
 
 .section .section-content {
 	margin-top: 60px;
 }
+
+.section-cols-2 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 40px;
+  }
+
+.section-cols-3 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 40px;
+  }
 
 .btn-contactMe {
     border-radius: 50px;
@@ -823,4 +821,18 @@ transition: all 200ms ease-in-out;
   
   .no-js .cd-hero__nav {
     display: none;
+  }
+
+  /* ABOUT ME */
+
+    #profile {
+        flex-direction: row;
+    }
+
+  .about-me h1{
+    font-family: "Oswald", sans-serif;
+  }
+
+  #profile img {
+      width: 25%;
   }
