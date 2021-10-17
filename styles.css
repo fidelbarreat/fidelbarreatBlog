@@ -111,20 +111,15 @@ a {
 	position: fixed;
   top: 0;
   left: 0;
-  z-index: 2;
+  z-index: 5;
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 0 30px;
-  /* background: rgb(43, 45, 66); */
-  transition: all 200ms ease-in-out;
+  background: var(--secondBGColor);
 }
 
-.header .menu .scrolled {
-transition: all 200ms ease-in-out;
-  background: rgb(43, 45, 66);
-}
 
 .header .menu .navbar li {
     position: relative;
